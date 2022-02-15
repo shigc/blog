@@ -17,7 +17,7 @@ categories: assembly
 
 2. 选中项目-右键-生成自定义-选择masm
 
-![image-20220212163511877](D:/develop/Blog/images/image-20220212163511877.png)
+![image-20220212163511877](images/image-20220212163511877.png)
 
 3. 项目属性-配置属性-链接器-系统-子系统修改为控制台 (/SUBSYSTEM:CONSOLE)
 
