@@ -11,11 +11,7 @@ jobs:
   build: 
     runs-on: ubuntu-latest 
         
-    steps:
-    - name: Use root access
-      run: |
-        sudo su
-        
+    steps:   
     # check it to your workflow can access it
     # from: https://github.com/actions/checkout
     - name: Checkout Repository master branch
@@ -26,13 +22,11 @@ jobs:
         pwd
         ls -alt
         whoami
-        
-    - name: Clone shigc/hexo_blog PRIVATE repository
-      uses: GuillaumeFalourd/clone-github-repo-action@v1
-      with:
-        owner: 'shigc'
-        repository: 'hexo_blog'
-        access-token: ${{ secrets.ACCESS_TOKEN }}
+    
+    - name: Clone hexo_blog
+      run: |
+        cd ..
+        git clone https://${{ secrets.ACCESS_TOKEN }}@github.com/shigc/hexo_blog.git
     
     - name: After clone hexo_blog
       run: |
