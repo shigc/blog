@@ -12,6 +12,17 @@ jobs:
     runs-on: ubuntu-latest 
         
     steps:
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@main
+    
+    - name: After checkout main
+      run: |
+        pwd
+        ls -alt
+        whoami
+        
     - name: Clone shigc/hexo_blog PRIVATE repository
       uses: GuillaumeFalourd/clone-github-repo-action@v1
       with:
@@ -23,17 +34,8 @@ jobs:
       run: |
         pwd
         ls -alt
+        whoami
     
-    # check it to your workflow can access it
-    # from: https://github.com/actions/checkout
-    - name: Checkout Repository master branch
-      uses: actions/checkout@main
-    
-    - name: After checkout main
-      run: |
-        pwd
-        ls -alt
-      
     # from: https://github.com/actions/setup-node  
     - name: Setup Node.js 12.x 
       uses: actions/setup-node@master
