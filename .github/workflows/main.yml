@@ -26,9 +26,9 @@ jobs:
     - name: Clone shigc/hexo_blog PRIVATE repository
       uses: GuillaumeFalourd/clone-github-repo-action@v1
       with:
-      owner: 'shigc'
-      repository: 'hexo_blog'
-      access-token: ${{ secrets.ACCESS_TOKEN }}
+        owner: 'shigc'
+        repository: 'hexo_blog'
+        access-token: ${{ secrets.ACCESS_TOKEN }}
     
     - name: Setup Hexo Dependencies
       run: |
