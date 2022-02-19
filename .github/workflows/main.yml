@@ -30,7 +30,7 @@ jobs:
     
     - name: Fix images path
       run: |
-        mv source/_posts/images ../
+        mv source/_posts/images source/
         ls -al source/
     
     # from: https://github.com/actions/setup-node  
