@@ -9,19 +9,21 @@ on:
       
 jobs:
   build: 
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
         
     steps:   
     # check it to your workflow can access it
     # from: https://github.com/actions/checkout
     - name: Checkout Repository master branch
       uses: actions/checkout@main
+      with:
+        path: hexo
     
     - name: After checkout main
       run: |
         pwd
         ls -alt
-        whoami
+        echo $GITHUB_WORKSPACE
     
     - uses: actions/checkout@v2
       with:
@@ -30,6 +32,7 @@ jobs:
         repository: 'shigc/hexo_blog'
         ref: main
         token: ${{ secrets.ACCESS_TOKEN }}
+        path: hexo_blog
         
     - name: After clone hexo_blog
       run: |
@@ -64,6 +67,7 @@ jobs:
         git config --global user.email 'shigc1011@163.com'
     - name: Deploy Hexo 
       run: |
+        cd hexo_blog
         hexo clean
         hexo generate 
         hexo deploy
