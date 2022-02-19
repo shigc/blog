@@ -28,6 +28,11 @@ jobs:
       with:
         path: source/_posts
     
+    - name: Fix images path
+      run: |
+        mv source/_posts/images ../
+        ls -al source/
+    
     # from: https://github.com/actions/setup-node  
     - name: Setup Node.js 12.x 
       uses: actions/setup-node@master
@@ -36,7 +41,6 @@ jobs:
     
     - name: Setup Hexo Dependencies
       run: |
-        pwd
         npm install hexo-cli -g
         npm install
     
@@ -53,6 +57,7 @@ jobs:
       run: | 
         git config --global user.name 'shigc' 
         git config --global user.email 'shigc1011@163.com'
+    
     - name: Deploy Hexo 
       run: |
         hexo clean
