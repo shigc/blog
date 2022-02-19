@@ -55,7 +55,6 @@ jobs:
         git config --global user.email 'shigc1011@163.com'
     - name: Deploy Hexo 
       run: |
-        cd hexo_blog
         hexo clean
         hexo generate 
         hexo deploy
