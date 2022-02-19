@@ -1,5 +1,5 @@
 ---
-title: 汇编语言程序设计 - 基础组成
+title: Win32汇编语言程序设计 - 基础组成
 tags: [assembly]
 categories: assembly
 

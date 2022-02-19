@@ -1,5 +1,5 @@
 ---
-title: 汇编语言程序设计 - 环境搭建
+title: Win32汇编语言程序设计 - 环境搭建
 tags: [assembly]
 categories: assembly
 ---
