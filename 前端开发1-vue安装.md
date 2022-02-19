@@ -1,3 +1,9 @@
+---
+title: vue环境搭建
+tags: [vue,web]
+categories: vue
+---
+
 ## 1. vue环境搭建
 
 ### 1.1 安装node.js
