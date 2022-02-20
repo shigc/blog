@@ -2,6 +2,7 @@
 title: quagga的安装和使用
 tags: [quagga,router]
 categories: Quagga
+date: 2021-3-20 10:22:10
 ---
 Quagga软件原名是Zebra是由一个日本开发团队编写的一个以GNU版权方式发布的软件
 

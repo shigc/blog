@@ -2,6 +2,7 @@
 title: 程序的编译和链接
 tags: [c,programming]
 categories: programming
+date: 2021-6-20 10:26:21
 ---
 
 

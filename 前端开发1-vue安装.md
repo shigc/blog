@@ -2,6 +2,7 @@
 title: vue环境搭建
 tags: [vue,web]
 categories: vue
+date: 2021-11-20 10:18:40
 ---
 
 ## 1. vue环境搭建

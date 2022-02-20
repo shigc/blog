@@ -2,6 +2,7 @@
 title: 安卓手机用作电脑的HTTP代理服务器
 tags: [android,proxy]
 categories: Android
+date: 2021-7-20 10:27:14
 ---
 目前电脑上的免费VPN软件比较难找，但是安卓上的免费VPN软件很多，所以考虑手机翻墙后作为电脑端的HTTP代理服务器，让电脑端也可以科学上网
 
