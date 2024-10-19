@@ -21,7 +21,6 @@ jobs:
         # Default: ${{ github.repository }}
         repository: 'shigc/hexo_blog'
         ref: main
-        token: ${{ secrets.ACCESS_TOKEN }}
     
     # check it to your workflow can access it
     - name: Checkout Repository main branch
