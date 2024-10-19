@@ -12,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
         
     steps:
-
-    - name: Init
-      run: | 
-        export GIT_TERMINAL_PROMPT=1
     
     # checkout hexo_blog
     - name: Checkout hexo_blog
