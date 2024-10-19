@@ -24,6 +24,8 @@ jobs:
         # Default: ${{ github.repository }}
         repository: 'shigc/hexo_blog'
         ref: main
+        permissions: read-all
+        secrets: inherit
     
     # check it to your workflow can access it
     - name: Checkout Repository main branch
