@@ -13,8 +13,8 @@ jobs:
         
     steps:
 
-    - run: git config --global credential.https://github.com.username myusername
-    - run: git config --global credential.https://github.com.password ${{ secrets.ACCESS_TOKEN}}
+    - run: git config --global credential.https://github.com.username shigc
+    - run: git config --global credential.https://github.com.password ${{ secrets.GH_PASSWORD}}
     
     # checkout hexo_blog
     - name: Checkout hexo_blog
@@ -24,8 +24,6 @@ jobs:
         # Default: ${{ github.repository }}
         repository: 'shigc/hexo_blog'
         ref: main
-        ssh-key: ${{ secrets.ACCESS_TOKEN }}
-        persist-credentials: false
     
     # check it to your workflow can access it
     - name: Checkout Repository main branch
