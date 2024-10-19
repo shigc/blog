@@ -9,6 +9,7 @@ on:
       
 jobs:
   build: 
+    permissions: read-all
     runs-on: ubuntu-latest
         
     steps:
@@ -19,13 +20,13 @@ jobs:
     # checkout hexo_blog
     - name: Checkout hexo_blog
       uses: actions/checkout@v4
+      
       with:
         # Repository name with owner. For example, actions/checkout
         # Default: ${{ github.repository }}
         repository: 'shigc/hexo_blog'
-        ref: main
-        permissions: read-all
-        secrets: inherit
+        ref: main  
+        
     
     # check it to your workflow can access it
     - name: Checkout Repository main branch
