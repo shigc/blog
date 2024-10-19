@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
         
     steps:
+
+    - name: Init
+      run: | 
+        export GIT_TERMINAL_PROMPT=1
+    
     # checkout hexo_blog
     - name: Checkout hexo_blog
       uses: actions/checkout@v2
@@ -55,7 +60,6 @@ jobs:
         
     - name: Setup Git Infomation
       run: | 
-        export GIT_TERMINAL_PROMPT=1
         git config --global user.name 'shigc' 
         git config --global user.email 'shigc1011@163.com'
     
