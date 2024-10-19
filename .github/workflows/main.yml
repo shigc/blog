@@ -55,6 +55,7 @@ jobs:
         
     - name: Setup Git Infomation
       run: | 
+        export GIT_TERMINAL_PROMPT=1
         git config --global user.name 'shigc' 
         git config --global user.email 'shigc1011@163.com'
     
